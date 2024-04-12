@@ -3,9 +3,9 @@ package org.project.reddit.classes;
 import org.apache.commons.codec.digest.DigestUtils;
 
 import java.util.ArrayList;
-import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.UUID;
 
 public class User
 {
