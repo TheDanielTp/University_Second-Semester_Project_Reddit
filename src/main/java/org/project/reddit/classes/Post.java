@@ -6,6 +6,8 @@ import java.util.ArrayList;
 
 public class Post
 {
+    //region Objects
+
     private static final ArrayList <Post> postList = new ArrayList <> ();
 
     private final ArrayList <Comment> commentList = new ArrayList <> ();
@@ -18,6 +20,8 @@ public class Post
 
     private String text;
     private int    karma;
+
+    //endregion
 
     //region Initialize Functions
 

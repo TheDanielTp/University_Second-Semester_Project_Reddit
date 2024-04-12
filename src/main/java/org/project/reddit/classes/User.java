@@ -11,7 +11,7 @@ public class User
 {
     //region Objects
 
-    private static final ArrayList <User> userList = new ArrayList <> ();
+    private static ArrayList <User> userList = new ArrayList <> ();
 
     private final ArrayList <Comment> commentList          = new ArrayList <> ();
     private final ArrayList <Comment> upVotedCommentList   = new ArrayList <> ();
@@ -59,6 +59,11 @@ public class User
         }
         System.out.println ("> uuid generated successfully");
         return id;
+    }
+
+    public static void setUserList (ArrayList <User> userList)
+    {
+        User.userList = userList;
     }
 
     //endregion
@@ -530,6 +535,11 @@ public class User
     //endregion
 
     //region Get-Info Functions
+
+    public static ArrayList <User> getUserList ()
+    {
+        return userList;
+    }
 
     public ArrayList <Subreddit> getSubRedditList ()
     {

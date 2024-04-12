@@ -5,9 +5,13 @@ import java.time.format.DateTimeFormatter;
 
 public class Message
 {
+    //region Objects
+
     private final String message;
     private final String dateTime;
     private final User   user;
+
+    //endregion
 
     //region Initialize Functions
 

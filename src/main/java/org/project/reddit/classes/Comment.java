@@ -5,12 +5,16 @@ import java.time.format.DateTimeFormatter;
 
 public class Comment
 {
+    //region Objects
+
     private final Post   post;
     private final String dateTime;
     private final User   user;
 
     private String text;
     private int    karma;
+
+    //endregion
 
     //region Initialize Functions
 

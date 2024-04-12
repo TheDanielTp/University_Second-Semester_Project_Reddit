@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.Scene;
 import javafx.scene.Parent;
 import javafx.fxml.FXMLLoader;
+import org.project.reddit.classes.DataManager;
 import org.project.reddit.classes.User;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
@@ -104,6 +105,8 @@ public class SignupViewController
         Parent root  = FXMLLoader.load (Objects.requireNonNull (getClass ().getResource ("/org/project/reddit/MainView.fxml")));
         Stage  stage = (Stage) ((Node) event.getSource ()).getScene ().getWindow ();
         Scene  scene = new Scene (root);
+
+        DataManager.saveData ();
 
         stage.setScene (scene);
         stage.setResizable (false);

@@ -6,6 +6,8 @@ import java.util.ArrayList;
 
 public class Subreddit
 {
+    //region Objects
+
     private static final ArrayList <Subreddit> subredditList = new ArrayList <> ();
 
     private final ArrayList <User> memberList = new ArrayList <> ();
@@ -17,6 +19,8 @@ public class Subreddit
     private final String topic;
 
     private int memberCount;
+
+    //endregion
 
     //region Initialize Functions
 
