@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="postPane" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="283.0" minWidth="-Infinity" prefHeight="293.0" prefWidth="925.0" style="-fx-border-color: d9d9d9; -fx-border-width: 1;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.project.reddit.controllers.PostViewController">
+   <children>
+      <Label fx:id="textBody" alignment="TOP_LEFT" layoutX="61.0" layoutY="30.0" prefHeight="19.0" prefWidth="847.0" text="Text" wrapText="true">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label fx:id="usernameText" layoutX="48.0" layoutY="10.0" text="Username">
+         <font>
+            <Font name="Arial" size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateTimeText" layoutX="829.0" layoutY="8.0" text="Date and Time">
+         <font>
+            <Font name="Arial" size="11.0" />
+         </font>
+      </Label>
+      <Button layoutX="6.0" layoutY="207.0" mnemonicParsing="false" onAction="#refreshComments" prefHeight="28.0" prefWidth="28.0" text="🔄" />
+      <Button fx:id="saveButton" layoutX="6.0" layoutY="143.0" mnemonicParsing="false" onAction="#savePost" prefHeight="28.0" prefWidth="28.0" text="💾" />
+      <Label fx:id="tagsText" layoutX="62.0" layoutY="150.0" prefHeight="17.0" prefWidth="571.0" text="Tags">
+         <font>
+            <Font size="11.0" />
+         </font></Label>
+      <ScrollPane hbarPolicy="NEVER" layoutX="60.0" layoutY="191.0" prefHeight="102.0" prefWidth="859.0" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="54.0" AnchorPane.rightAnchor="12.0">
+         <content>
+            <VBox fx:id="commentBox" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="97.0" prefWidth="847.0" spacing="5.0">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="85.0" prefWidth="851.0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <children>
+                        <TextArea fx:id="newCommentText" layoutX="26.0" layoutY="26.0" prefHeight="43.0" prefWidth="744.0" promptText="Type your comment" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="21.0" AnchorPane.topAnchor="21.0" />
+                        <Button layoutX="430.0" layoutY="30.0" mnemonicParsing="false" onAction="#sendComment" text="Send" AnchorPane.rightAnchor="21.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <Label fx:id="karmaCount" alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="10.0" text="Karma" textAlignment="CENTER">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="dislikeButton" layoutX="6.0" layoutY="65.0" mnemonicParsing="false" onAction="#downVotePost" prefHeight="28.0" prefWidth="28.0" style="-fx-background-color: #0079d3;" text="▼" textFill="WHITE" />
+      <Button fx:id="deleteButton" layoutX="6.0" layoutY="175.0" mnemonicParsing="false" onAction="#deletePost" prefHeight="28.0" prefWidth="28.0" text="🗑" />
+      <Button fx:id="editButton" layoutX="6.0" layoutY="111.0" mnemonicParsing="false" onAction="#editPost" prefHeight="28.0" prefWidth="28.0" text="✏" textAlignment="CENTER" />
+      <Label fx:id="topicText" layoutX="440.0" layoutY="8.0" text="Topic">
+         <font>
+            <Font name="Times New Roman Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="likeButton" layoutX="6.0" layoutY="32.0" mnemonicParsing="false" onAction="#upVotePost" prefHeight="28.0" prefWidth="28.0" style="-fx-background-color: ff4500;" text="▲" textFill="WHITE" />
+      <Line endX="38.29290771484375" endY="242.0" fill="#d9d9d9" layoutX="2.0" layoutY="-5.0" startX="38.29290771484375" startY="12.0" stroke="#d9d9d9" />
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</AnchorPane>
