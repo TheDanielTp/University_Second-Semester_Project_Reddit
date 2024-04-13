@@ -21,7 +21,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/TheDanielTp/Third_Assignment_Hogwarts">
-    <img src="logo.png" alt="Logo" width="427" height="240">
+    <img src="logo.png" alt="Logo" width="400" height="120">
   </a>
 <h3 align="center">Reddit - Dive into anything</h3>
 
