@@ -1,4 +1,4 @@
-# Hogwarts School Database
+# Reddit
 <!-- Improved compatibility of Back to Top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
 <!--
@@ -135,39 +135,6 @@ Reddit Events:
 
 Join community events, discussions, or challenges organized by subreddits or Reddit as a whole.
 Meetups: Connect with other Redditors in real life by attending or organizing local meetups and events.
-
-### Features
-
-Reddit offers a rich and diverse online community with countless opportunities for engagement, learning, and entertainment. By understanding its features, etiquette, and community dynamics, users can navigate Reddit effectively and make the most out of their experience. Whether you're seeking information, entertainment, or meaningful conversations, Reddit has something for everyone.
-
-#### Student Class
-
-- **Constructor**: Initializes a new student with essential details such as username, owlmail, password, full name, and student house.
-- **Account Functions**: Allows students to manage their account settings, including changing the username, password, and owlmail.
-- **Validation Functions**: Validates the format and uniqueness of a username, owlmail, and password.
-- **Find Functions**: Finds a student by their full name.
-
-#### Professor Class
-
-- **Constructor**: Initializes a new professor with essential details such as username, owlmail, password, and full name.
-- **Account Functions**: Allows professors to manage their account settings, including changing the username, password, and owlmail.
-- **Authority Functions**: Validates the format and uniqueness of a username, owlmail, and password. Checks password validity and retrieves user number based on owlmail.
-- **Professor Functions**: Allows professors to enroll in courses, view all courses taught by them, score students, and view comments.
-
-#### Course Class
-
-- **Constructor**: Initializes a new course with a title and assigns a professor if provided.
-- **Course Functions**: Allows adding students to the course, setting scores for students, and finding scores of students in the course.
-- **Find Functions**: Finds a course by its title.
-
-#### Hogwarts Class
-
-- **Rate Professor**: Allows users to rate a professor and add comments.
-- **View Student Info**: Displays detailed information about a student.
-- **Request Course**: Allows students to request a new course.
-- **Global Functions**: Displays information about all professors, students, and courses. Sets attributes and displays all professors, students, and courses.
-
-This program provides comprehensive functionality for managing the data of Hogwarts School, facilitating smooth operations and efficient organization.
 
 <p align="right">(<a href="#readme-top">Back to Top</a>)</p>
 
